@@ -1,0 +1,39 @@
+{% extends "index.html" %} {% block title %} Home - Animal Shelter {% endblock %}
+
+{% block header %} 
+    <header>
+        {% if user.is_authenticated %}
+            <h2><a href="animals">Click here meet your new friend!</a></h2>
+        {% else %}
+            <h2><a href="sign-up">Register yourself to adopt us!</a></h2>
+        {% endif %}
+    </header>
+{% endblock %}
+
+{%block content %}
+    <h2>Meet your new friend!</h2>
+    <div class="representative">
+        <div class="card">
+            <img src="../static/img/animals/antek.jpg" alt="">
+            <h3>Stefan</h3>
+            <p>He is a cat.</p>
+        </div>
+
+        <div class="card">
+            <img src="../static/img/animals/nika.jpg" alt="">
+            <h3>Fretka</h3>
+            <p>She is a cat</p>
+        </div>
+
+        <div class="card">
+            <img src="../static/img/animals/arnold.jpg" alt="">
+            <h3>Arnold</h3>
+            <p>He is a cat</p>
+        </div>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit tempore atque vero,
+         distinctio officia est accusantium quae ipsa necessitatibus labore eos totam repellat 
+         excepturi quasi consequuntur quia recusandae cupiditate magnam.
+    </p>
+{% endblock %}

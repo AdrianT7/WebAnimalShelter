@@ -1,0 +1,183 @@
+:root {
+    --mainColor: #BD8931;
+    --secondaryColor: #a6a6a6;
+    --contrastColor: #c0c0c0;
+    --successColor: #7BEC2F;
+    --errorColor: #FF0000;
+  }  
+
+* {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+
+title {display: none;}
+
+nav {
+    height: 10vh;
+    background-color: var(--mainColor);
+    text-align: right;
+    line-height: 10vh;
+    border-bottom: solid #fff 3px;
+}
+
+nav > a {
+    display: inline-block;
+    font-size: 3vh;
+    margin: 0 4vw;
+    color: #fff;
+}
+
+nav > a:first-of-type{float: left;}
+
+header {
+    height: 85vh;
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header > h2 {
+    background-color: var(--secondaryColor);
+    display: inline-block;
+    height: 8vh;
+    line-height: 8vh;
+    padding: 0 2vw;
+    border-radius: 10px;
+    border: solid #fff 3px;
+}
+
+header > h2 > a {
+    color: #000;
+}
+
+main {
+    background-color: var(--secondaryColor);
+    min-height: 50vh;
+    text-align: center;
+    color: #fff;
+}
+
+main > div.form{
+    min-height: 50vh; /*should be inherited from main?*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main > h2 {
+    padding: 4vh 0;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+div.representative {
+    display: flex;
+    justify-content: space-around;
+}
+
+div.card {
+    min-height: 70vh;
+    width: 25vw;
+    border-radius: 5%;
+    border: 5px solid var(--contrastColor);
+}
+
+div.card:hover {
+    cursor: pointer;
+}
+
+div.card > h3 {
+    font-size: 32px;
+    font-weight: bold;
+    padding: 1vh;
+}
+
+img {
+    width: 100%;
+    height: 85%;
+    border-radius: 5% 5% 0 0;
+}
+
+form {
+    width: 40vw;
+    min-height: 40vh;
+    text-align: center;
+    background-color: var(--contrastColor);
+    border-radius: 10px;
+    border: solid #fff 3px;
+    margin: 10vh;
+    overflow: hidden;
+}
+
+form > h3 {
+    font-size: 32px;
+    padding: 2vh;
+    background-color: var(--mainColor);
+}
+
+form input, button {
+    width: 20vw;
+    margin: 0 auto;
+    padding: 2vh;
+    margin: 2vh auto;
+    font-size: 22px;
+    border-radius: 10px;
+}
+
+form > button{
+    margin: 4vh auto;
+    width: 20vw;
+    background-color: var(--mainColor);
+    color: #FFF;
+    font-weight: bold;
+}
+
+form > p {
+    font-size: 16px;
+    padding: 2vh;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    
+    color: #fff;
+    background-color: var(--mainColor);
+    border-top: solid #fff 3px;
+    min-height: 30vh;
+    font-size: 3vh;
+    padding: 3vh;
+}
+
+footer > h2 {
+    align-self: flex-start;
+}
+
+a {
+    text-decoration: none;
+}
+
+span > p {
+    padding: 2vh 0;
+    color: white;
+    font-size: 2vh;
+    font-weight: bold;
+}
+
+.error {
+    background-color: var(--errorColor);
+    text-align: center;
+}
+
+.success {
+    background-color: var(--successColor);
+    text-align: center;
+}
