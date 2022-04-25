@@ -1,0 +1,12 @@
+{% extends "index.html" %} {% block title %} sign up - Animal Shelter {% endblock %}
+{% block formula %}
+    <div class="form">
+        <form method="POST">
+            <h3>Log in</h3>
+            <input name="email" type="email" placeholder="e-mail" required>
+            <input name="password" type="password" placeholder="password" required>
+            <button type="submit">Log in!</button>
+            <p>Forget your password?</p>
+        </form>
+    </div>
+{% endblock %}
